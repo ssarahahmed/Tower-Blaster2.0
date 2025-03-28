@@ -6,9 +6,12 @@ public class BallBehavior : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("FallThrough"))
         {
-            Debug.Log("Ball fell through the platform!");
+           
             Physics.IgnoreCollision(collision.collider, GetComponent<Collider>(), true);
+
+            // Deactivate the platform (make it disappear)
+            //collision.gameObject.SetActive(false); // Disables the platform
         }
     }
-}
 
+}

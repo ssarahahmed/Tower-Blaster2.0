@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class CameraBehavior: MonoBehaviour
 {
-    public Transform ball; // Drag your ball here
+    public Transform ball; 
     public float smoothSpeed = 0.125f;
     public Vector3 offset;
 
